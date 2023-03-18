@@ -1,8 +1,2 @@
 #!/bin/bash
-
-# Define the input and output files
-CFILE="your_c_file.c"
-OUTPUT_FILE="c"
-
-# Run the C file through the preprocessor and save the result to the output file
-gcc -E $CFILE -o $OUTPUT_FILE
+gcc -E $CFILE -o c
