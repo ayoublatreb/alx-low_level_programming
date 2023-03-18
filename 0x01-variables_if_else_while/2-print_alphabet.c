@@ -1,20 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - Entry point
- *
- * Return: Always 0 (Success)
+ * Description: This program prints the alphabet
+ * in lowercase, followed by a new line.
+ * Return: 0
  */
-
 int main(void)
 {
-	char low;
+	char alphabets[] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-		putchar('\n');
-
+	for (i = 0; alphabets[i] != '\0'; i++)
+	{
+		putchar(alphabets[i]);
+		if (alphabets[i] == 'z')
+			putchar('\n');
+	}
 	return (0);
 }
