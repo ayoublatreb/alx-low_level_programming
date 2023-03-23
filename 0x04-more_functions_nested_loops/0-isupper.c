@@ -1,20 +1,23 @@
-#include "main.h"
-
+#include "holberton.h"
 
 /**
- * _isalpha - returns 1 if c is a letter
- *
- * @c: character to be checked if alpha
- *
- * Return: 1 if letter, 0 otherwise
- **/
-
-int _isalpha(int c)
+ * _isupper - A function that checks for uppercase character.
+ * @c: An input character
+ * Return: 1 if c is uppercase or 0 otherwise
+ */
+int _isupper(int c)
 {
-	if ((c <= 90) && (c >= 65))
-		return (1);
-	else if ((c >= 97) && (c <= 122))
-		return (1);
-	else
-		return (0);
+	char uppercase = 'A';
+	int isupper = 0;
+
+	for (; uppercase <= 'Z'; uppercase++)
+	{
+		if (c == uppercase)
+		{
+			isupper = 1;
+			break;
+		}
+	}
+
+	return (isupper);
 }
