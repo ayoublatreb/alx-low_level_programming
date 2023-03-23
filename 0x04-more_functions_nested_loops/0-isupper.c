@@ -1,13 +1,20 @@
-#include <unistd.h>
+#include "main.h"
+
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * _isalpha - returns 1 if c is a letter
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
+ * @c: character to be checked if alpha
+ *
+ * Return: 1 if letter, 0 otherwise
+ **/
+
+int _isalpha(int c)
 {
-	return (write(1, &c, 1));
+	if ((c <= 90) && (c >= 65))
+		return (1);
+	else if ((c >= 97) && (c <= 122))
+		return (1);
+	else
+		return (0);
 }
