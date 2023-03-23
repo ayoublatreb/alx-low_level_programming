@@ -1,6 +1,4 @@
 #include "main.h"
-
-
 /**
  * _isalpha - returns 1 if c is a letter
  *
@@ -8,12 +6,11 @@
  *
  * Return: 1 if letter, 0 otherwise
  **/
-
-int _isalpha(int c)
+int _isupper(int x)
 {
-	if ((c <= 90) && (c >= 65))
+	if ((x <= 90) && (x >= 65))
 		return (1);
-	else if ((c >= 97) && (c <= 122))
+	else if ((x >= 97) && (x <= 122))
 		return (1);
 	else
 		return (0);
