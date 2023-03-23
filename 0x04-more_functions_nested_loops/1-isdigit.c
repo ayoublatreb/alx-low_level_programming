@@ -1,34 +1,23 @@
 #include "main.h"
 
-
 /**
- * print_alphabet - prints lower case alphabet
- *
- **/
-
-void print_alphabet(void)
+ * _isdigit - A function that checks for a digit (0 through 9).
+ * @c: An input integer
+ * Return: 1 if c is a digit or 0 otherwise
+ */
+int _isdigit(int c)
 {
+	char i = '0';
+	int isdigit = 0;
 
-	char i;
-
-	for (i = 'a'; i <= 'z'; i++)
+	for (; i <= '9'; i++)
 	{
-		_putchar(i);
+		if (i == c)
+		{
+			isdigit = 1;
+			break;
+		}
 	}
-	_putchar('\n');
-}
 
-/**
- * print_alphabet_x10 - prints aphabet 10 times
- *
- **/
-void print_alphabet_x10(void)
-{
-
-	int i;
-
-	for (i = '0'; i <= '9'; i++)
-	{
-		print_alphabet();
-	}
+	return (isdigit);
 }
