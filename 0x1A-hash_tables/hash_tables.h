@@ -1,5 +1,5 @@
-#ifndef __H_tables__
-#define __H_tables__
+#ifndef __hash_tables__
+#define __hash_tables__
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -118,4 +118,4 @@ void shash_table_print_rev(const shash_table_t *ht);
 
 void shash_table_delete(shash_table_t *ht);
 
-#endif /* __H_tables__ */
+#endif /* __hash_tables__ */
